@@ -4,7 +4,7 @@
  * 
  * @package Tstrap 简约博客主题
  * @author Breeze
- * @version 1.0.0
+ * @version 1.1.0
  * @link https://www.gzk.ink
  */
  if (!defined('__TYPECHO_ROOT_DIR__')) exit;
