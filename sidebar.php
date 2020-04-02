@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas hidden-xs" id="sidebar">
 		<h4>最新文章</h4>
           <div class="list-group">
     <?php $this->widget('Widget_Contents_Post_Recent','pageSize=5')
@@ -8,7 +8,7 @@
           </div>
         </div><!--/.sidebar-offcanvas-->
 	
-<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas hidden-xs" id="sidebar">
 		<h4>最新评论</h4>
           <div class="list-group">
           	<?php $this->widget('Widget_Comments_Recent','pageSize=4')->to($comments); ?>
