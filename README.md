@@ -1,7 +1,7 @@
 # Tstrap - Typecho Theme
-Typecho简约博客主题 - Tstrap 1.0
+Typecho简约博客主题 - Tstrap 1.1
 
-版本号：1.0
+最新版本：1.1
 
 风格：简约
 
@@ -10,6 +10,12 @@ Typecho简约博客主题 - Tstrap 1.0
 鸣谢：Bootstrap、@wuxiaocong
 
 作者：@Gongzhengke
+
+V1.1 版本更新
+1. 新增：全宽页面
+2. 修改：手机端自动隐藏侧边栏
+3. 修改：评论区头像支持Gravatar和QQ头像
+
 
 V1.0 版本 主题介绍
 1. 本主题为简约轻风格，适合博客、小说、文学站
