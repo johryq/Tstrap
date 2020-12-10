@@ -121,20 +121,21 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <!--        <li><a href="<?php $this->options->siteUrl(); ?>">首页</a></li>  -->
-
+            <li><a href="<?php $this->options->siteUrl(); ?>"></a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <?php $this->widget('Widget_Contents_Page_List')
-              ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
-
-            <!--<li class="dropdown">        
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/admin/">后台管理</a></li>
-          </ul>
-        </li>-->
+            <!-- 下拉列表 -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="">电影</a></li>
+                <li role="separator" class="divider"></li>
+                <!-- 自定义页面 -->
+                <?php $this->widget('Widget_Contents_Page_List')
+                  ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
+              </ul>
+            </li>
           </ul>
 
         </div><!-- /.navbar-collapse -->
