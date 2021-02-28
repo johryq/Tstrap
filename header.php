@@ -127,6 +127,16 @@
           <ul class="nav navbar-nav navbar-right">
             <!-- 下拉列表 -->
             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <?php $this->widget('Widget_Metas_Category_List')->to($category); ?>
+                <?php while ($category->next()) : ?>
+                  <li <?php if ($this->is('category', $category->slug)) : ?> class="current" <?php endif; ?>><a href="<?php $category->permalink(); ?>"><?php $category->name(); ?></a>
+                  </li>
+                <?php endwhile; ?>
+              </ul>
+            </li>
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="">电影</a></li>

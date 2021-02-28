@@ -11,10 +11,6 @@
                         <?php
                         endwhile;
                          ?>
-
-                        <!-- <?php #$this->widget('Widget_Metas_Category_List', 'type=category', 'software')->to($categoryPosts); ?>
-                        <?php#$categoryPosts->parse('<li><a href="{permalink}">{name}</a> ({count})</li>') ?>
-                        <?php #$this->widget($categoryPosts)->parse('<li><a href="{permalink}">{name}</a> ({count})</li>'); ?> -->
                 </ul>
         </div>
 </div>
